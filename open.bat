@@ -1,1 +1,1 @@
-activate CarND-Term1 & jupyter notebook advanced_lane_line.ipynb
+activate CarND-Term1 & jupyter notebook Advanced_Lane_Lines .ipynb
