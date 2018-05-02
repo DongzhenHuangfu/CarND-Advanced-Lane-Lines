@@ -1,1 +1,0 @@
-activate CarND-Term1 & jupyter notebook process_in_picture.ipynb
