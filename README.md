@@ -1,5 +1,7 @@
 ## Advanced Lane Lines Detection
 
+Click the pictures to see the final result of the videos.
+
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=ov1p9XT_8VI
 " target="_blank"><img src="http://img.youtube.com/vi/ov1p9XT_8VI/0.jpg" 
 alt="Result of challenge video" width="420" height="236.25" border="10" /></a>
