@@ -3,7 +3,9 @@
 <iframe width="420" height="236.25"" src="https://www.youtube.com/embed/ov1p9XT_8VI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 [![Watch the result of challenge video](http://img.youtube.com/vi/AtVCt0LQZyk/0.jpg)](https://www.youtube.com/embed/AtVCt0LQZyk)
-
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=AtVCt0LQZyk
+" target="_blank"><img src="http://img.youtube.com/vi/AtVCt0LQZyk/0.jpg" 
+alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 
 ---
 
