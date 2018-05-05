@@ -2,6 +2,8 @@
 
 <iframe width="420" height="236.25" src="https://github.com/DongzhenHuangfu/CarND-Advanced-Lane-Lines/raw/master/output_videos/video.mp4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe><iframe width="420" height="236.25" src="https://www.youtube.com/embed/AtVCt0LQZyk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
+[![Watch the result of project video](http://img.youtube.com/vi/AtVCt0LQZyk/0.jpg)](https://www.youtube.com/embed/AtVCt0LQZyk)
+
 
 ---
 
