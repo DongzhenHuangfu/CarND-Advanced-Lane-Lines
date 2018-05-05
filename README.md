@@ -1,5 +1,8 @@
 ## Advanced Lane Lines Detection
 
+<iframe width="420" height="236.25" src="https://www.youtube.com/embed/ov1p9XT_8VI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe><iframe width="420" height="236.25" src="https://www.youtube.com/embed/AtVCt0LQZyk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+
 ---
 
 **Advanced Lane Finding Project**
@@ -29,9 +32,6 @@ I start by preparing "object points", which will be the (x, y, z) coordinates of
 
 I then used the output `obj_points` and `img_points` to compute the camera calibration and distortion coefficients using the `cv2.calibrateCamera()` function.  I applied this distortion correction to the test image using the `cv2.undistort()` function and obtained this result: 
 
-Original Image| Undistorted Image
---|--
-
 <img width="90%" height="40%" src="https://github.com/DongzhenHuangfu/CarND-Advanced-Lane-Lines/raw/master/output_images/calibration/compare_calibration1.jpg"/>
 
 ### Pipeline (single images)
@@ -39,13 +39,13 @@ Original Image| Undistorted Image
 #### 1. Undistort the image
 
 To demonstrate this step, I will describe how I apply the distortion correction to one of the test images like this one:
-<img width="80%" height="60%" src="https://github.com/DongzhenHuangfu/CarND-Advanced-Lane-Lines/raw/master/output_images/calibration/straight_lines1.jpg"/>
+<img width="80%" height="60%" src="https://github.com/DongzhenHuangfu/CarND-Advanced-Lane-Lines/raw/master/output_images/calibration/straight_lines2.jpg"/>
 
 #### 2. Create a thresholded binary image
 
-I used a combination of color and gradient thresholds to generate a binary image (thresholding steps at the third part of the code in "./Advanced_Lane_Lines.ipynb".).  Here's an example of my output for this step.
+I first used a combination of color and gradient thresholds to generate a binary image, but later when I faced the challange video I found that there were too much noise by using the gray scale. SO I finally use the HLS channel only(thresholding steps at the third part of the code in "./Advanced_Lane_Lines.ipynb".).  Here's an example of my output for this step.
 
-<img width="80%" height="60%" src="https://github.com/DongzhenHuangfu/CarND-Advanced-Lane-Lines/raw/master/output_images/binary/combined_straight_lines1.jpg"/>
+<img width="80%" height="60%" src="https://github.com/DongzhenHuangfu/CarND-Advanced-Lane-Lines/raw/master/output_images/binary/combined_straight_lines2.jpg"/>
 
 #### 3. Transform the pictures into bird-eye views
 
@@ -74,7 +74,7 @@ Then I did some other stuff and fit my lane lines with a 2nd order polynomial ki
 
 - with precious finding around detected lines:
 
-<img width="90%" height="40%" src="https://github.com/DongzhenHuangfu/CarND-Advanced-Lane-Lines/raw/master/output_images/histogram/sprecious_straight_lines1.jpg"/>
+<img width="90%" height="40%" src="https://github.com/DongzhenHuangfu/CarND-Advanced-Lane-Lines/raw/master/output_images/histogram/precious_straight_lines1.jpg"/>
 
 THe relevant code is at the 5th part of the IPython notebook.
 
@@ -95,12 +95,26 @@ I implemented this step in the 7th part of the IPython notebook. Here is an exam
 
 #### 1. Finally I generate the output on the video using the method above.
 
-Here's a [link to my video result](./output_videos/project_video.mp4)
+Cause I met some problems the first time when I finished the project on challange video, so I used another IPython notebook named "./process_video.ipynb" to solve the problem, and this is also the file, which I found that the gray scale method is not helpful and decided to use the three HLS channels.
+
+In this IPython notebook, I picked the frames, which bad result appeared out and tried to fixed my parameters on them. So if you want to see the final method I got, please open [process_video.ipynb](./process_video.ipynb).
+
+You can see the video result on the top of this page or click [this link to my project video result](./output_videos/video.mp4) and [this link to my challange video result](./output_videos/challange_video.mp4).
 
 ---
 
 ### Discussion
 
-#### 1. Briefly discuss any problems / issues you faced in your implementation of this project.  Where will your pipeline likely fail?  What could you do to make it more robust?
+Here I'll talk about the approach I took, what techniques I used, what worked and why, where the pipeline might fail and how I might improve it if I were going to pursue this project further.
 
-Here I'll talk about the approach I took, what techniques I used, what worked and why, where the pipeline might fail and how I might improve it if I were going to pursue this project further.  
+To finish this projcet, I used the following techniques:
+
+- Camera calibration.
+- Bird-eye view transformation.
+- HLS channel with threshold method.
+- Find the lane lines with sliding window and on the foundation of the previous lane lines.
+
+The problems I met:
+
+- The pipline are still not stable or just returns bad results under strong sunlight.
+- The lane line which is yellow are much more difficult to locate.
