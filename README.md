@@ -8,7 +8,6 @@ alt="Result of challenge video" width="420" height="236.25" border="10" /></a>
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=AtVCt0LQZyk
 " target="_blank"><img src="http://img.youtube.com/vi/AtVCt0LQZyk/0.jpg" 
 alt="Result of challenge video" width="420" height="236.25" border="10" /></a>
->>>>>>> 59622d0eed17cafdd610bcedcf7d1e5a4fc77c1a
 
 ---
 
