@@ -1,7 +1,14 @@
 ## Advanced Lane Lines Detection
 
-<iframe width="420" height="236.25"" src="https://www.youtube.com/embed/ov1p9XT_8VI?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe><iframe width="420" height="236.25" src="https://www.youtube.com/embed/AtVCt0LQZyk?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+Click the pictures to see the final result of the videos.
 
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=ov1p9XT_8VI
+" target="_blank"><img src="http://img.youtube.com/vi/ov1p9XT_8VI/0.jpg" 
+alt="Result of challenge video" width="420" height="236.25" border="10" /></a>
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=AtVCt0LQZyk
+" target="_blank"><img src="http://img.youtube.com/vi/AtVCt0LQZyk/0.jpg" 
+alt="Result of challenge video" width="420" height="236.25" border="10" /></a>
+>>>>>>> 59622d0eed17cafdd610bcedcf7d1e5a4fc77c1a
 
 ---
 
